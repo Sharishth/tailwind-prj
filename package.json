@@ -1,0 +1,26 @@
+{
+  "name": "tailwind-prj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildcss": "npx tailwindcss -o dist/output.css --minify",
+    "minicss": "postcss ./dist/output.css -o ./dist/output.css",
+    "buildprocss": "cross-env NODE_ENV=production postcss dist/output.css -o dist/output.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.9",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0"
+  }
+}
